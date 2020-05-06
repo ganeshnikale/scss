@@ -1,0 +1,9 @@
+.square {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  background-color: #f00;
+}
+/*# sourceMappingURL=style.css.map */

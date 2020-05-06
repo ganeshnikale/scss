@@ -1,0 +1,16 @@
+@import "customVariables";
+@import "mediaQueries";
+@import "fontFamily";
+@import "customMixins";
+@import "customButons";
+
+
+
+.square {
+    @include opacity(0.5);
+    height: 250px;
+    width:250px;
+    text-align: center;
+    
+    background-color: $red;
+  }

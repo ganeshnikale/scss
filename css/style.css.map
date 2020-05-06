@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAAA,OAAO,CAAC;EIPN,OAAO,EJQY,GAAG;EINtB,MAAM,EAAE,iBAA4B;EJOlC,MAAM,EAAE,KAAK;EACb,KAAK,EAAC,KAAK;EACX,UAAU,EAAE,MAAM;EAElB,gBAAgB,ECdf,IAAI;CDeN",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/customVariables.scss",
+        "../scss/mediaQueries.scss",
+        "../scss/fontFamily.scss",
+        "../scss/customMixins.scss",
+        "../scss/customButons.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
