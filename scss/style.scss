@@ -3,14 +3,17 @@
 @import "fontFamily";
 @import "customMixins";
 @import "customButons";
-
-
-
+@import "fontAwesome/scss/fontawesome.scss";
 .square {
     @include opacity(0.5);
     height: 250px;
     width:250px;
-    text-align: center;
-    
+    text-align: center;  
     background-color: $red;
+  }
+  .fa-html5{
+    height: 30px;
+    width: 30px;
+    background-color: #f00;
+    @include font-size(25);
   }

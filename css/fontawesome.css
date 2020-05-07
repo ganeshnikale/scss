@@ -6041,21 +6041,4 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
-
-.square {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  height: 250px;
-  width: 250px;
-  text-align: center;
-  background-color: #f00;
-}
-
-.fa-html5 {
-  height: 30px;
-  width: 30px;
-  background-color: #f00;
-  font-size: 25px;
-  font-size: 1.25rem;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=fontawesome.css.map */
