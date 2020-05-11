@@ -106,4 +106,26 @@
   font-size: 25px;
   font-size: 1.25rem;
 }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #09ecd8;
+}
+
+.text {
+  border: 1px solid #62f9ec;
+  padding: 20px;
+  position: relative;
+}
+
+.text:after {
+  content: "pseudo Text";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
 /*# sourceMappingURL=style.css.map */

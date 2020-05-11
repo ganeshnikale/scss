@@ -10,10 +10,28 @@
     width:250px;
     text-align: center;  
     background-color: $red;
+    
   }
   .fa-html5{
     height: 30px;
     width: 30px;
     background-color: #f00;
     @include font-size(25);
+  }
+
+  .triangle{
+   // @include arrow-left( $size:40px,$color:$base);
+   @include css-triangle($base,left,20px);
+  }
+
+
+  .text{
+    @include border();
+    padding:20px;
+    position: relative;
+    &:after{
+      @include pseudo($content:"pseudo Text");
+      top:10px;
+      left:2px;
+    }
   }
