@@ -3,7 +3,7 @@
 @import "fontFamily";
 @import "customMixins";
 @import "customButons";
-@import "fontAwesome/scss/fontawesome.scss";
+//@import "fontAwesome/scss/fontawesome.scss";
 .square {
     @include opacity(0.5);
     height: 250px;

@@ -1,0 +1,52 @@
+@import "customMixins";
+
+$fontPath: 'webfonts/latoFont';
+
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+    );
+
+@each $val, $i in $font-weights {
+    .font-weight-#{$val}{
+        font-weight: $i;
+    }
+}
+
+$font-family:(
+       "font1":(
+        "fontName":"latoblack","fileName":"lato-black-webfont",
+       ),
+       "font2":(
+        "fontName":"latoblack_italic","fileName":"lato-blackitalic-webfont",
+       ),
+       "font3":(
+        "fontName":"latobold","fileName":"lato-bold-webfont",
+       ),
+       "font4":(
+        "fontName":"latobold_italic","fileName":"lato-bolditalic-webfont",
+       ),
+       "font5":(
+        "fontName":"latoitalic","fileName":"lato-italic-webfont",
+       ),
+       "font6":(
+        "fontName":"latolight","fileName":"lato-light-webfont",
+       ),
+       "font7":(
+        "fontName":"latolight_italic","fileName":"lato-lightitalic-webfont",
+       ),
+       "font8":(
+        "fontName":"latoregular","fileName":"lato-regular-webfont",
+       ),
+       "font9":(
+        "fontName":"latohairline","fileName":"lato-thin-webfont",
+       ),
+       "font10":(
+        "fontName":"latohairline_italic","fileName":"lato-thinitalic-webfont",
+       )
+);
+@each $fontFamily, $i in $font-family {
+    @include font-face(map-get($i,"fontName"), $fontPath + map-get($i,"fileName"), $weight: normal, $style: normal);
+}
