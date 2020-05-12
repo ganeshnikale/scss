@@ -1,0 +1,10 @@
+
+
+
+@function background($color){
+    @return $color;
+}
+
+.test{
+    background: background(yellow);
+}

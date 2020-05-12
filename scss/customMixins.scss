@@ -71,7 +71,7 @@ $asset-base: '../images/';
 }
 
 // Border
-@mixin border($width: 1px, $style: solid, $color: #dddddd) {
+@mixin border($width: 1px, $style: solid, $color: $borderColor) {
   border: $width $style $color;
 }
 
@@ -103,41 +103,41 @@ $asset-base: '../images/';
     text-transform: lowercase;
 }
 
-// Arrow Up
-@mixin arrow-up($size:5px, $color:$white) {
-    width: 0; 
-    height: 0; 
-    border-left: $size solid transparent;
-    border-right: $size solid transparent;
-    border-bottom: $size solid $color;
+//css Triangles
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+ // @include pseudo($pos: $position);
+  width: 0;
+  height: 0;
+  @if $round {
+      border-radius: 3px;
+  }
+  @if $direction == down {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-top: $size solid $color;
+  } @else if $direction == up {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-bottom: $size solid $color;
+  } @else if $direction == right {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent;
+      border-left: $size solid $color;
+  } @else if  $direction == left {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent;
+      border-right: $size solid $color;
+  }
 }
 
-// Arrow Down
-@mixin arrow-down($size:5px, $color:$white) {
-    width: 0; 
-    height: 0; 
-    border-left: $size solid transparent;
-    border-right: $size solid transparent;    
-    border-top: $size solid $color;
+//pseudo
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
 }
-  
-// Arrow Right
-@mixin arrow-right($size:5px, $color:$white) {
-    width: 0; 
-    height: 0; 
-    border-top: $size solid transparent;
-    border-bottom: $size solid transparent;    
-    border-left: $size solid $color;
-}
-  
-// Arrow Left
-@mixin arrow-left($size:5px, $color:$white) {
-    width: 0; 
-    height: 0; 
-    border-top: $size solid transparent;
-    border-bottom: $size solid transparent;     
-    border-right: $size solid $color; 
-}
+
 
 @mixin center-block {
   display: block;

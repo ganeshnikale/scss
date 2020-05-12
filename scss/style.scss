@@ -3,6 +3,7 @@
 @import "fontFamily";
 @import "customMixins";
 @import "customButons";
+<<<<<<< .mine
 
 :root{
 	@include font-size(20);
@@ -15,10 +16,25 @@
 	}
 }
 
+=======
+//@import "fontAwesome/scss/fontawesome.scss";
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
 h2{
 	@include font-size(70);
 }
 .square {
+<<<<<<< .mine
   @include opacity(0.5);
   height: 250px;
   width:250px;
@@ -26,3 +42,58 @@ h2{
   background-color: $red;
   @include font-size(20);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+    @include opacity(0.5);
+    height: 250px;
+    width:250px;
+    text-align: center;  
+    background-color: $red;
+    
+  }
+  .fa-html5{
+    height: 30px;
+    width: 30px;
+    background-color: #f00;
+    @include font-size(25);
+  }
+
+  .triangle{
+   // @include arrow-left( $size:40px,$color:$base);
+   @include css-triangle($base,left,20px);
+  }
+
+
+  .text{
+    @include border();
+    padding:20px;
+    position: relative;
+    &:after{
+      @include pseudo($content:"pseudo Text");
+      top:10px;
+      left:2px;
+    }
+  }
+>>>>>>> .theirs
