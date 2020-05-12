@@ -1,3 +1,19 @@
+:root {
+  font-size: 20px;
+  font-size: 1rem; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+      font-size: 16px;
+      font-size: 0.8rem; } }
+  @media only screen and (max-width: 767px) {
+    :root {
+      font-size: 14px;
+      font-size: 0.7rem; } }
+
+h2 {
+  font-size: 70px;
+  font-size: 3.5rem; }
+
 .square {
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -5,5 +21,7 @@
   width: 250px;
   text-align: center;
   background-color: #f00;
-}
+  font-size: 20px;
+  font-size: 1rem; }
+
 /*# sourceMappingURL=style.css.map */

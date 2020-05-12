@@ -4,13 +4,25 @@
 @import "customMixins";
 @import "customButons";
 
+:root{
+	@include font-size(20);
+ 	@include screen('tablet') {
+ 		@include font-size(16);
+	}
 
+ 	@include screen('mobile') {
+ 		@include font-size(14);
+	}
+}
 
+h2{
+	@include font-size(70);
+}
 .square {
-    @include opacity(0.5);
-    height: 250px;
-    width:250px;
-    text-align: center;
-    
-    background-color: $red;
-  }
+  @include opacity(0.5);
+  height: 250px;
+  width:250px;
+  text-align: center;    
+  background-color: $red;
+  @include font-size(20);
+}

@@ -1,14 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AAQA,AAAA,OAAO,CAAC;EIPN,OAAO,EJQY,GAAG;EINtB,MAAM,EAAE,iBAA4B;EJOlC,MAAM,EAAE,KAAK;EACb,KAAK,EAAC,KAAK;EACX,UAAU,EAAE,MAAM;EAElB,gBAAgB,ECdf,IAAI;CDeN",
-    "sources": [
-        "../scss/style.scss",
-        "../scss/customVariables.scss",
-        "../scss/mediaQueries.scss",
-        "../scss/fontFamily.scss",
-        "../scss/customMixins.scss",
-        "../scss/customButons.scss"
-    ],
-    "names": [],
-    "file": "style.css"
+"version": 3,
+"mappings": "AAMA,KAAK;ECAH,SAAS,EAAE,IAAU;EACrB,SAAS,EAAE,IAAsB;EAiM/B,iEAAkC;IDlMtC,KAAK;MCAH,SAAS,EAAE,IAAU;MACrB,SAAS,EAAE,MAAsB;EAsM/B,yCAAkC;IDvMtC,KAAK;MCAH,SAAS,EAAE,IAAU;MACrB,SAAS,EAAE,MAAsB;;ADUnC,EAAE;ECXA,SAAS,EAAE,IAAU;EACrB,SAAS,EAAE,MAAsB;;ADanC,OAAQ;EC2DN,OAAO,ED1DU,GAAG;EC4DpB,MAAM,EAAE,iBAA4B;ED3DpC,MAAM,EAAE,KAAK;EACb,KAAK,EAAC,KAAK;EACX,UAAU,EAAE,MAAM;EAClB,gBAAgB,EEzBb,IAAI;EDMP,SAAS,EAAE,IAAU;EACrB,SAAS,EAAE,IAAsB",
+"sources": ["../scss/style.scss","../scss/customMixins.scss","../scss/customVariables.scss"],
+"names": [],
+"file": "style.css"
 }
